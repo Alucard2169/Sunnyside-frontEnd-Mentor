@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  min-width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 375px;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/mobile/image-header.jpg?raw=true") no-repeat top;
+  background-size: cover;
+}
+
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1rem;
+}
+
+.logo-container {
+  width: 30%;
+}
+
+.logo-container .logo {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.dropdown-menu {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.dropdown-menu #menu {
+  opacity: 0;
+}
+
+.dropdown-menu .icon {
+  margin-top: -1rem;
+  width: 130%;
+  cursor: pointer;
+}
+
+.dropdown-menu .menu-items {
+  background: white;
+  opacity: 0;
+  width: 70%;
+  padding: 2rem;
+  position: absolute;
+  text-align: center;
+  margin-left: -19.65rem;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: opacity 400ms ease-in, -webkit-transform 200ms ease-in-out;
+  transition: opacity 400ms ease-in, -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, opacity 400ms ease-in;
+  transition: transform 200ms ease-in-out, opacity 400ms ease-in, -webkit-transform 200ms ease-in-out;
+}
+
+.dropdown-menu .items {
+  margin-bottom: 2rem;
+  position: relative;
+  font-family: "Barlow", sans-serif;
+}
+
+.dropdown-menu .special button {
+  border: none;
+  padding: 1rem 2rem;
+  background-color: #fad400;
+  color: #23303e;
+  font-family: "Fraunces", sans-serif;
+  border-radius: 50px;
+}
+
+.dropdown-menu a {
+  color: #818498;
+}
+
+.dropdown-menu .items::after {
+  content: "";
+  background: orange;
+  height: 1px;
+  width: 10rem;
+  bottom: -1px;
+  left: 50px;
+  position: absolute;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.dropdown-menu .items:hover::after {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+#menu:checked ~ .menu-items {
+  opacity: 1;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: opacity 400ms ease-in, -webkit-transform 200ms ease-in-out;
+  transition: opacity 400ms ease-in, -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, opacity 400ms ease-in;
+  transition: transform 200ms ease-in-out, opacity 400ms ease-in, -webkit-transform 200ms ease-in-out;
+}
+
+.site-heading {
+  font-family: "Fraunces", serif;
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  text-align: center;
+  margin: 3rem 0;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
+  font-size: 44px;
+}
+
+.down-arrow {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 1rem;
+  padding-bottom: 9rem;
+}
+
+.transform,
+.graphic,
+.photography,
+.stand-out {
+  width: 100%;
+  text-align: center;
+}
+
+.transform .image,
+.graphic .image,
+.photography .image,
+.stand-out .image {
+  width: 100%;
+}
+
+.heading {
+  font-family: "Fraunces", sans-serif;
+  color: #23303e;
+  margin: 3rem 2.5rem 2rem;
+  font-size: 2rem;
+}
+
+.text-article {
+  color: #818498;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  margin: 0 1.5rem;
+  font-size: 20px;
+  line-height: 2.2rem;
+}
+
+.learn-more {
+  border: none;
+  font-family: "Fraunces", sans-serif;
+  margin: 3rem;
+  position: relative;
+  background: none;
+}
+
+.graphic {
+  position: relative;
+}
+
+.graphic .position-text-content {
+  position: absolute;
+  margin-top: -17rem;
+}
+
+.graphic .position-text-content .heading {
+  font-size: 28px;
+  color: #26554d;
+}
+
+.graphic .position-text-content .text-article {
+  font-size: 16px;
+  margin-top: -1rem;
+  line-height: 1.5;
+  color: #26554d;
+}
+
+.photography {
+  position: relative;
+}
+
+.photography .image {
+  margin-top: -0.25rem;
+}
+
+.photography .position-text-content {
+  position: absolute;
+  margin-top: -15rem;
+}
+
+.photography .position-text-content .heading {
+  font-size: 28px;
+  color: #0a4764;
+}
+
+.photography .position-text-content .text-article {
+  font-size: 16px;
+  margin-top: -1rem;
+  line-height: 1.5;
+  color: #0c5a81;
+}
+
+.testimonials {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.testimonials-heading {
+  font-family: "Fraunces", sans-serif;
+  font-size: 16px;
+  color: #818498;
+  letter-spacing: 5px;
+}
+
+.client {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.client .profile-pic {
+  width: 4rem;
+  border-radius: 100%;
+  margin-bottom: 3rem;
+}
+
+.client .text {
+  color: #5a636c;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0 1.5rem;
+  line-height: 1.8rem;
+  word-spacing: 2px;
+}
+
+.client .info {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.client .info .name {
+  font-family: "Fraunces", sans-serif;
+  color: #23303e;
+}
+
+.client .info .occupation {
+  font-family: "Barlow", sans-serif;
+  color: #a7abae;
+  font-family: 16px;
+  font-weight: normal;
+}
+
+.gallery {
+  margin-top: 4rem;
+  width: 100%;
+  height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.gallery .images {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+footer {
+  background: #90d4c5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-icon {
+  margin: 3rem 0;
+}
+
+footer .footer-icon .foot-icon {
+  width: 100%;
+}
+
+footer .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+
+footer .nav .A {
+  font-family: "Barlow", sans-serif;
+}
+
+footer .nav a {
+  color: #4c9081;
+}
+
+footer .media {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+@media only screen and (width: 1440px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+  }
+  .top-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 1.5rem;
+  }
+  .logo-container {
+    width: 20%;
+  }
+  .dropdown-menu {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .dropdown-menu #menu {
+    display: none;
+  }
+  .dropdown-menu .icon {
+    display: none;
+  }
+  .dropdown-menu .menu-items {
+    background: transparent;
+    opacity: 1;
+    margin-top: -1.2rem;
+    margin-left: -34rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    padding: 0;
+    position: absolute;
+    border-top-right-radius: 0;
+  }
+  .dropdown-menu .items {
+    font-size: 24px;
+    display: inline;
+    color: white;
+    padding-right: 4rem;
+  }
+  .dropdown-menu a {
+    color: white;
+  }
+  .dropdown-menu .special button {
+    border: none;
+    margin: 0;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: #23303e;
+    font-family: "Fraunces", sans-serif;
+    border-radius: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
