@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    color: gray;
+}
+
+body {
+    background: white;
+    min-width: 375px;
+    gap: none;
+}
+
+header {
+    text-align: center;
+    position: relative;
+
+    .hero-banner {
+        width: 100%;
+    }
+
+    .arrow,
+    .site-title {
+        left: 0;
+        right: 0;
+        margin: 76% auto 0;
+        position: absolute;
+    }
+
+    .site-title {
+        font-family: 'Fraunces', sans-serif;
+        color: white;
+        font-size: 2.5rem;
+        margin: 40% auto 0;
+        width: 80%;
+        word-spacing: 2px;
+        letter-spacing: 6px;
+        top: 0;
+    }
+
+    .upper-bar {
+        padding: 2rem;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .site-logo {
+            margin-right: auto;
+        }
+
+        .mobile-menu-design {
+            margin-top: 20%;
+            position: absolute;
+            text-align: center;
+            background-color: white;
+            width: 90%;
+            padding: 2.5rem 0 1rem 0;
+
+            .items {
+                color: gray;
+                font-family: "Barlow", sans-serif;
+                margin-bottom: 2rem;
+            }
+
+            .contacts {
+                background-color: yellow;
+                width: 50%;
+                padding: 1rem;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+                color: black;
+                font-family: "Fraunces", sans-serif;
+                border-radius: 50px;
+
+                a {
+                    color: black;
+                }
+            }
+
+        }
+
+        #mobile-menu {
+            display: none;
+        }
+
+        #mobile-menu:checked~.mobile-menu-design {
+            visibility: hidden;
+            display: none;
+        }
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    margin-top: -.2rem;
+
+    img {
+        width: 100%;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        section {
+            margin: 3rem 0;
+            text-align: center;
+            width: 80%;
+
+            h2 {
+                font-size: 2rem;
+                font-family: "Fraunces", sans-serif;
+            }
+
+            article {
+                margin-top: 1.5rem;
+                font-family: "Barlow", sans-serif;
+                line-height: 25px;
+            }
+
+            button {
+                margin-top: 2rem;
+                border: none;
+                color: black;
+                font-family: "Fraunces", sans-serif;
+            }
+        }
+    }
+}
