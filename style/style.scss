@@ -50,6 +50,10 @@ sans-serif;
         margin-bottom: 1.5rem;
         font-size: 1.8rem;
     }
+
+    article {
+        margin-bottom: 3rem;
+    }
 }
 
 img {
@@ -156,11 +160,13 @@ header {
 
 
 main {
-    margin-top: -.2rem;
+    width: 100%;
+    height: 100%;
+    margin-top: -2%;
     gap: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: auto 1fr;
 
 
 
@@ -222,8 +228,8 @@ main {
 
 
     .testimony {
+        margin-top: 3rem;
         width: 100%;
-        border: 1px red solid;
 
         .test-heading {
             font-size: 1.2rem;
@@ -233,7 +239,6 @@ main {
         }
 
         section {
-            border: 1px red solid;
             padding: 3rem 2.5rem;
 
             .client-pfp {
