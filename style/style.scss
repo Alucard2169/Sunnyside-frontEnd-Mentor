@@ -4,73 +4,107 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 a {
-    color: gray;
+    text-decoration: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+$heading-one: 'Barlow',
+sans-serif;
+
+$heading-two: 'Fraunces',
+sans-serif;
+
+@mixin section-format-one {
+    padding: 3rem 1rem;
+
+    h2 {
+        color: hsl(212, 27%, 19%);
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    article {
+        color: hsl(213, 9%, 39%);
+        font-size: 1.25rem;
+        line-height: 30px;
+        margin-bottom: 2rem;
+    }
+
+    a {
+        color: hsl(212, 27%, 19%);
+    }
+}
+
+@mixin section-format-two {
+    margin: 110% auto 0;
+    width: 90%;
+
+    h2 {
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+    }
+}
+
+img {
+    width: 100%;
 }
 
 body {
-    background: white;
-    min-width: 375px;
-    gap: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
 }
 
 header {
     text-align: center;
     position: relative;
 
-    .hero-banner {
+    .nav-bar {
+        padding: 1rem;
         width: 100%;
-    }
-
-    .arrow,
-    .site-title {
-        left: 0;
-        right: 0;
-        margin: 76% auto 0;
-        position: absolute;
-    }
-
-    .site-title {
-        font-family: 'Fraunces', sans-serif;
-        color: white;
-        font-size: 2.5rem;
-        margin: 40% auto 0;
-        width: 80%;
-        word-spacing: 2px;
-        letter-spacing: 6px;
-        top: 0;
-    }
-
-    .upper-bar {
-        padding: 2rem;
         position: absolute;
         top: 0;
-        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
 
         .site-logo {
-            margin-right: auto;
+            width: 40%;
         }
 
-        .mobile-menu-design {
-            margin-top: 20%;
+        .mobile-menu {
+            #mobile-menu-button {
+                display: none;
+            }
+        }
+
+        .mobile-menu-container {
+            left: 0;
+            right: 0;
+            margin: 100% auto 0;
             position: absolute;
             text-align: center;
             background-color: white;
             width: 90%;
             padding: 2.5rem 0 1rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
 
-            .items {
+            .menu-item {
                 color: gray;
-                font-family: "Barlow", sans-serif;
-                margin-bottom: 2rem;
+                font-family: $heading-one;
+
             }
 
-            .contacts {
+            .contact {
                 background-color: yellow;
                 width: 50%;
                 padding: 1rem;
@@ -81,60 +115,197 @@ header {
                 border-radius: 50px;
 
                 a {
+
                     color: black;
                 }
             }
 
         }
 
-        #mobile-menu {
-            display: none;
-        }
 
-        #mobile-menu:checked~.mobile-menu-design {
-            visibility: hidden;
-            display: none;
-        }
+
     }
+
+
+
+    .hero-heading {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 80%;
+        word-spacing: 10px;
+        font-size: 2.5rem;
+        font-family: $heading-two;
+        color: white;
+        letter-spacing: 5px;
+        margin: 0 auto;
+        top: 25%;
+    }
+
+    .arrow {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 2.8rem;
+        top: 50%;
+    }
+
 }
 
+
+
 main {
+    margin-top: -.2rem;
+    gap: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    margin-top: -.2rem;
+    grid-template-rows: repeat(6, 1fr);
 
-    img {
-        width: 100%;
+
+
+    section,
+    div {
+        text-align: center;
+
+        h2,
+        aside {
+            font-family: $heading-two;
+        }
+
+        article,
+        p,
+        span {
+            font-family: $heading-one;
+        }
     }
 
-    div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .transform-section {
+
+        .transform {
+            @include section-format-one();
+        }
+    }
+
+    .stand-out-section {
+        .stand-out {
+            h2 {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            @include section-format-one();
+        }
+    }
+
+    .graphics {
+        background: url("/images/mobile/image-graphic-design.jpg") no-repeat top;
+        background-size: 100%;
+
+        .graphic-info {
+            color: hsl(167, 40%, 24%);
+            @include section-format-two();
+        }
+
+    }
+
+    .photographics {
+        background: url("/images/mobile/image-photography.jpg") no-repeat top;
+        background-size: 100%;
+
+        .photo-info {
+            color: hsl(198, 62%, 26%);
+            @include section-format-two();
+        }
+    }
+
+
+
+    .testimony {
+        width: 100%;
+        border: 1px red solid;
+
+        .test-heading {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            color: hsl(232, 10%, 55%);
+        }
 
         section {
-            margin: 3rem 0;
-            text-align: center;
-            width: 80%;
+            border: 1px red solid;
+            padding: 3rem 2.5rem;
 
-            h2 {
-                font-size: 2rem;
-                font-family: "Fraunces", sans-serif;
+            .client-pfp {
+                margin-bottom: 2rem;
+                width: 25%;
+                border-radius: 50px;
             }
 
             article {
-                margin-top: 1.5rem;
-                font-family: "Barlow", sans-serif;
+                margin-bottom: 2rem;
                 line-height: 25px;
+                font-size: 1.2rem;
+                color: hsl(213, 9%, 39%);
             }
 
-            button {
-                margin-top: 2rem;
-                border: none;
-                color: black;
-                font-family: "Fraunces", sans-serif;
+            aside {
+                h2 {
+                    margin-bottom: 1rem;
+                    font-size: 1.5rem;
+                    color: hsl(212, 27%, 19%);
+                }
+
+                span {
+                    color: hsl(213, 9%, 39%);
+                    font-size: 1.1rem;
+                }
             }
         }
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        font-size: 0px;
+
+    }
+
+}
+
+footer {
+    background-color: hsl(168, 34%, 41%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0 5rem;
+
+    .footer-logo {
+        width: 50%;
+    }
+
+    .nav {
+        width: 100%;
+        padding: 3rem 2rem 4rem;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            font-family: $heading-one;
+            font-size: 1.2rem;
+
+            a {
+                color: hsl(198, 62%, 26%);
+                text-decoration: none;
+            }
+        }
+    }
+
+    .social {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 7rem 0;
     }
 }
