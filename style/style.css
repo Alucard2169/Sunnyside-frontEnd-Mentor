@@ -169,6 +169,10 @@ main .transform-section .transform article {
 
 main .transform-section .transform a {
   color: #23303e;
+  text-decoration: underline;
+  -webkit-text-decoration-color: lightcoral;
+          text-decoration-color: lightcoral;
+  text-decoration-thickness: 5px;
 }
 
 main .stand-out-section .stand-out {
@@ -195,6 +199,10 @@ main .stand-out-section .stand-out article {
 
 main .stand-out-section .stand-out a {
   color: #23303e;
+  text-decoration: underline;
+  -webkit-text-decoration-color: lightcoral;
+          text-decoration-color: lightcoral;
+  text-decoration-thickness: 5px;
 }
 
 main .graphics {
@@ -273,22 +281,22 @@ main .testimony section aside h2 {
 }
 
 main .testimony section aside span {
-  color: #5a636c;
+  color: #818498;
   font-size: 1.1rem;
 }
 
 main .gallery {
+  margin-top: 1rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  font-size: 0px;
 }
 
 footer {
-  background-color: #458c7e;
+  background-color: #90D4C5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,7 +331,7 @@ footer .nav span {
 }
 
 footer .nav span a {
-  color: #19536b;
+  color: #569A8B;
   text-decoration: none;
 }
 
@@ -336,5 +344,9 @@ footer .social {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem 7rem 0;
+}
+
+footer .social img {
+  color: #307767;
 }
 /*# sourceMappingURL=style.css.map */
