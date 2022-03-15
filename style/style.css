@@ -229,7 +229,7 @@ main .stand-out-section .stand-out a {
 }
 
 main .graphics {
-  background: url("/images/mobile/image-graphic-design.jpg") no-repeat top;
+  background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/mobile/image-graphic-design.jpg?raw=true") no-repeat top;
   background-size: 100%;
 }
 
@@ -249,7 +249,7 @@ main .graphics .graphic-info article {
 }
 
 main .photographics {
-  background: url("/images/mobile/image-photography.jpg") no-repeat top;
+  background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/mobile/image-photography.jpg?raw=true") no-repeat top;
   background-size: 100%;
 }
 
@@ -396,6 +396,7 @@ footer .social {
 footer .social img {
   color: #307767;
 }
+<<<<<<< HEAD
 
 @media only screen and (min-width: 1300px) {
   header {
@@ -591,3 +592,6 @@ footer .social img {
   }
 }
 /*# sourceMappingURL=style.css.map */
+=======
+/*# sourceMappingURL=style.css.map */
+>>>>>>> 3359763b8f4ff05c0a9017d3b294c3b09af72126
