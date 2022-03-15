@@ -400,7 +400,7 @@ footer .social img {
 @media only screen and (min-width: 1300px) {
   header {
     min-height: 100vh;
-    background-image: url("../images/desktop/image-header.jpg");
+    background-image: url("./images/desktop/image-header.jpg");
   }
   header .hero-heading {
     top: 20%;
