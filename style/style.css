@@ -28,7 +28,7 @@ body {
 header {
   text-align: center;
   position: relative;
-  background: url("/images/mobile/image-header.jpg") no-repeat bottom;
+  background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/mobile/image-header.jpg?raw=true") no-repeat bottom;
   background-size: cover;
   min-height: 64vh;
 }
@@ -229,7 +229,7 @@ main .stand-out-section .stand-out a {
 }
 
 main .graphics {
-  background: url("/images/mobile/image-graphic-design.jpg") no-repeat top;
+  background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/mobile/image-graphic-design.jpg?raw=true") no-repeat top;
   background-size: 100%;
 }
 
@@ -249,7 +249,7 @@ main .graphics .graphic-info article {
 }
 
 main .photographics {
-  background: url("/images/mobile/image-photography.jpg") no-repeat top;
+  background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/mobile/image-photography.jpg?raw=true") no-repeat top;
   background-size: 100%;
 }
 
@@ -323,22 +323,22 @@ main .gallery {
 }
 
 main .gallery .milkbottle {
-  background: url("/images/mobile/image-gallery-milkbottles.jpg") no-repeat top;
+  background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/mobile/image-gallery-milkbottles.jpg?raw=true") no-repeat top;
   background-size: 100% 100%;
 }
 
 main .gallery .orange {
-  background: url("/images/mobile/image-gallery-orange.jpg") no-repeat top;
+  background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/mobile/image-gallery-orange.jpg?raw=true") no-repeat top;
   background-size: 100%;
 }
 
 main .gallery .cone {
-  background: url("/images/mobile/image-gallery-cone.jpg") no-repeat top;
+  background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/mobile/image-gallery-cone.jpg?raw=true") no-repeat top;
   background-size: 100% 100%;
 }
 
 main .gallery .sugar {
-  background: url("/images/mobile/image-gallery-sugar-cubes.jpg") no-repeat top;
+  background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/mobile/image-gallery-sugar-cubes.jpg?raw=true") no-repeat top;
   background-size: 100% 100%;
 }
 
@@ -400,7 +400,7 @@ footer .social img {
 @media only screen and (min-width: 1300px) {
   header {
     min-height: 100vh;
-    background-image: url("./images/desktop/image-header.jpg");
+    background-image: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/desktop/image-header.jpg?raw=true");
   }
   header .hero-heading {
     top: 20%;
@@ -529,7 +529,7 @@ footer .social img {
   }
   main .graphics {
     margin-top: -.3rem;
-    background: url("/images/desktop/image-graphic-design.jpg") no-repeat top;
+    background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/desktop/image-graphic-design.jpg?raw=true") no-repeat top;
   }
   main .graphics .graphic-info {
     margin: 60% auto 0;
@@ -537,7 +537,7 @@ footer .social img {
   }
   main .photographics {
     margin-top: -.2rem;
-    background: url("/images/desktop/image-photography.jpg") no-repeat top;
+    background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/desktop/image-photography.jpg?raw=true") no-repeat top;
   }
   main .photographics .photo-info {
     margin: 60% auto 0;
@@ -573,16 +573,16 @@ footer .social img {
     grid-column: span 2;
   }
   main .gallery .milkbottle {
-    background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
+    background-image: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/desktop/image-gallery-milkbottles.jpg?raw=true");
   }
   main .gallery .orange {
-    background-image: url("/images/desktop/image-gallery-orange.jpg");
+    background-image: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/desktop/image-gallery-orange.jpg?raw=true");
   }
   main .gallery .cone {
-    background-image: url("/images/desktop/image-gallery-cone.jpg");
+    background-image: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/desktop/image-gallery-cone.jpg?raw=true");
   }
   main .gallery .sugar {
-    background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
+    background-image: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/desktop/image-gallery-sugarcubes.jpg?raw=true");
   }
   footer {
     padding: 5rem 30rem;
