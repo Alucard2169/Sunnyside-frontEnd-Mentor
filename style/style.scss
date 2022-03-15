@@ -60,6 +60,30 @@ sans-serif;
     }
 }
 
+@mixin section-format-desktop {
+    padding: 5rem;
+    text-align: left;
+    margin-top: 2rem;
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    article {
+        font-size: 1.2rem;
+    }
+
+    aside {
+        font-size: 1rem;
+    }
+}
+
+@mixin section-format-special-desktop {
+    margin: 60% auto 0;
+    width: 50%;
+
+}
+
 img {
     width: 100%;
 }
@@ -73,6 +97,9 @@ body {
 header {
     text-align: center;
     position: relative;
+    background: url("/images/mobile/image-header.jpg") no-repeat bottom;
+    background-size: cover;
+    min-height: 64vh;
 
     .nav-bar {
         padding: 1rem;
@@ -96,7 +123,7 @@ header {
         .mobile-menu-container {
             left: 0;
             right: 0;
-            margin: 100% auto 0;
+            margin: 120% auto 0;
             position: absolute;
             text-align: center;
             background-color: white;
@@ -106,28 +133,47 @@ header {
             flex-direction: column;
             gap: 2rem;
 
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: transparent;
+                top: -40px;
+                right: 0;
+                border-right: 25px white solid;
+                border-left: 25px transparent solid;
+                border-top: 25px transparent solid;
+                border-bottom: 25px white solid;
+            }
+
             .menu-item {
                 color: gray;
                 font-family: $heading-one;
+                font-size: 1.3rem;
+            }
 
+            a {
+                color: #7E7B8C;
             }
 
             .contact {
-                background-color: yellow;
+                background-color: #FBD601;
                 width: 50%;
                 padding: 1rem;
                 margin: 0 auto;
                 margin-bottom: 2rem;
-                color: black;
                 font-family: "Fraunces", sans-serif;
                 border-radius: 50px;
 
                 a {
 
-                    color: black;
+                    color: #352600;
                 }
             }
 
+        }
+
+        .desktop {
+            display: none;
         }
 
 
@@ -147,7 +193,7 @@ header {
         color: white;
         letter-spacing: 5px;
         margin: 0 auto;
-        top: 25%;
+        top: 19%;
     }
 
     .arrow {
@@ -156,7 +202,7 @@ header {
         right: 0;
         margin: 0 auto;
         width: 2.8rem;
-        top: 50%;
+        top: 45%;
     }
 
 }
@@ -275,9 +321,37 @@ main {
 
     .gallery {
         margin-top: 1rem;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 10rem);
+        grid-template-columns: repeat(2, 50%);
+
+
+
+        .milkbottle {
+            background: url("/images/mobile/image-gallery-milkbottles.jpg") no-repeat top;
+            background-size: 100% 100%;
+
+        }
+
+
+        .orange {
+            background: url("/images/mobile/image-gallery-orange.jpg") no-repeat top;
+            background-size: 100%;
+        }
+
+        .cone {
+            background: url("/images/mobile/image-gallery-cone.jpg") no-repeat top;
+            background-size: 100% 100%;
+        }
+
+        .sugar {
+            background: url("/images/mobile/image-gallery-sugar-cubes.jpg") no-repeat top;
+            background-size: 100% 100%;
+        }
     }
 
 }
@@ -318,6 +392,191 @@ footer {
 
         img {
             color: #307767;
+        }
+    }
+}
+
+@media only screen and(min-width: 1300px) {
+    header {
+        min-height: 100vh;
+        background-image: url("/images/desktop/image-header.jpg");
+
+        .hero-heading {
+            top: 20%;
+            font-size: 3rem;
+        }
+
+        .arrow {
+            top: 40%;
+        }
+
+        .nav-bar {
+            width: 100%;
+            padding: 1.5rem 2.5rem;
+
+            .site-logo {
+                width: 15%;
+            }
+
+            .mobile-menu {
+                display: none;
+            }
+
+            .mobile-menu-container {
+                display: none;
+            }
+
+            .desktop {
+                display: flex;
+                align-items: center;
+                width: 40%;
+                justify-content: space-between;
+
+                span {
+                    color: white;
+                    font-family: $heading-one;
+                    font-size: 1.3rem;
+                }
+
+                a {
+                    color: white;
+                }
+
+                .contacts {
+                    background-color: white;
+                    width: 25%;
+                    padding: 1rem;
+                    font-family: "Fraunces", sans-serif;
+                    border-radius: 50px;
+
+                    a {
+
+                        color: black;
+                    }
+                }
+            }
+
+        }
+    }
+
+    main {
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+
+        .transform-section {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-areas: 'text image';
+            grid-column: span 2;
+
+            .egg-banner {
+                grid-area: image;
+
+                .egg-banner-image {
+                    width: 100%;
+                }
+            }
+
+            .transform {
+                grid-area: text;
+
+                @include section-format-desktop();
+            }
+        }
+
+        .stand-out-section {
+            margin: 0;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-areas: 'image text';
+            grid-column: span 2;
+
+            .stand-banner {
+                grid-area: image;
+            }
+
+            .stand-out {
+                grid-area: text;
+                @include section-format-desktop();
+            }
+        }
+
+        .graphics {
+            margin-top: -.3rem;
+            background: url("/images/desktop/image-graphic-design.jpg") no-repeat top;
+
+            .graphic-info {
+                @include section-format-special-desktop();
+            }
+        }
+
+        .photographics {
+            margin-top: -.2rem;
+            background: url("/images/desktop/image-photography.jpg") no-repeat top;
+
+            .photo-info {
+                @include section-format-special-desktop();
+            }
+        }
+
+        .testimony {
+            margin: 4rem 0;
+            position: relative;
+            display: flex;
+            grid-column: span 2;
+            padding: 0 3rem;
+
+            .test-heading {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                font-size: 1.5rem;
+            }
+
+            section {
+                margin-top: 3rem;
+            }
+
+
+        }
+
+        .gallery {
+            width: 100%;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 25rem);
+            grid-column: span 2;
+
+            .milkbottle {
+                background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
+            }
+
+            .orange {
+                background-image: url("/images/desktop/image-gallery-orange.jpg");
+            }
+
+            .cone {
+                background-image: url("/images/desktop/image-gallery-cone.jpg");
+            }
+
+            .sugar {
+                background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
+            }
+        }
+
+
+    }
+
+    footer {
+        padding: 5rem 30rem;
+
+        .nav {
+            width: 80%;
         }
     }
 }
