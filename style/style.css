@@ -549,7 +549,6 @@ footer .social img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border: 1px red solid;
     grid-column: span 2;
     padding: 0 3rem;
   }
