@@ -529,15 +529,15 @@ footer .social img {
   }
   main .graphics {
     margin-top: -.3rem;
-    background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/desktop/image-graphic-design.jpg?raw=true") no-repeat top;
+    background-image: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/desktop/image-graphic-design.jpg?raw=true");
   }
   main .graphics .graphic-info {
     margin: 60% auto 0;
     width: 50%;
   }
   main .photographics {
-    margin-top: -.2rem;
-    background: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/desktop/image-photography.jpg?raw=true") no-repeat top;
+    margin-top: -.3rem;
+    background-image: url("https://github.com/Alucard2169/Sunnyside-frontEnd-Mentor/blob/main/images/desktop/image-photography.jpg?raw=true");
   }
   main .photographics .photo-info {
     margin: 60% auto 0;
