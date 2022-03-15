@@ -428,8 +428,8 @@ footer {
 
             .desktop {
                 display: flex;
-                align-items: center;
                 width: 40%;
+                align-items: center;
                 justify-content: space-between;
 
                 span {
@@ -453,6 +453,7 @@ footer {
 
                         color: black;
                     }
+
                 }
             }
 
@@ -527,6 +528,7 @@ footer {
             margin: 4rem 0;
             position: relative;
             display: flex;
+            border: 1px red solid;
             grid-column: span 2;
             padding: 0 3rem;
 
